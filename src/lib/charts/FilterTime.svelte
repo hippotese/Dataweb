@@ -11,7 +11,7 @@
 		vg.width(innerWidth),
 		vg.height(120),
 		vg.intervalX({ as: selection, field: 't' }),
-		vg.yLabel('Effort (daN)'),
+		vg.yLabel('Effort (Kgf ou daN)'),
 		vg.margin(0),
 		vg.grid(true),
 		vg.colorScale('categorical'),

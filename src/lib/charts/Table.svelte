@@ -6,6 +6,7 @@
 
 	export let from: string;
 	export let columns: {} | undefined = undefined;
+	export let format: {} | undefined = undefined;
 	export let align: {} | undefined = undefined;
 	export let selection: any | undefined = undefined;
 	export let innerWidth: number;
@@ -20,7 +21,8 @@
 		margin: 0,
 		...(selection ? { filterBy: selection } : {}),
 		...(columns ? { columns: Object.keys(columns) } : {}),
-		...(align ? { align } : {})
+		...(align ? { align } : {}),
+		...(format ? { format } : {})
 	});
 
 	onMount(() => {

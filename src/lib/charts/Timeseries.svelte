@@ -22,7 +22,7 @@
 		vg.width(innerWidth),
 		vg.height(400),
 		vg.xDomain(selection),
-		vg.yLabel('Effort (daN)'),
+		vg.yLabel('Effort (Kgf ou daN)'),
 		vg.margin(0),
 		vg.grid(true),
 		vg.colorScale('categorical')

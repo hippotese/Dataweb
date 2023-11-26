@@ -77,6 +77,10 @@
 					...(metadata.sensorCount >= 2 ? { capteur_2: 'center' } : {}),
 					total: 'center'
 				}}
+				format={{
+					horodatage: (field) =>
+						new Date(field).toISOString().replace('T', ' ').replace('Z', '').slice(0, 19)
+				}}
 			/>
 		</article>
 	{/await}
